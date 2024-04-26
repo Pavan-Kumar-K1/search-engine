@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Results</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+        }
+        h1, h3 {
+            text-align: center;
+        }
+        h1 {
+            color: #007bff;
+            margin-bottom: 20px;
+        }
+        h3 {
+            color: #6c757d;
+            margin-bottom: 30px;
+        }
+        p {
+            background-color:aqua;
+            font-size: 20px;
+            border-radius: 8px;
+            width: 80%;
+            align-items: center;
+            padding: 15px;
+            margin: 15px 0;
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.485);
+        }
+    </style>
+</head>
+<body>
+    <h1>Search Results</h1>
+    <h3>Top 10 Most relevant subtitle files based on your search query are:</h3>
+    <div>
+        {% for your_list_element in text %}
+        <center><p>{{ your_list_element }}</p></center>
+        {% endfor %}
+    </div>
+</body>
+</html>
